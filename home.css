@@ -1,0 +1,124 @@
+@import url(./root.css);
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*-----------------Upper Nav-------------------- */
+.upper-nav-wrapper
+{
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 0.5rem 2rem;
+}
+.upper-nav
+{
+    height: 50px;
+}
+.nav-tools
+{
+    flex-basis: 80%;
+}
+.nav-tools svg,
+.sign-tool-wrapper h5
+{
+    cursor: pointer;
+}
+.search-tool-wrapper,
+.nav-tools svg,
+.sign-tool-wrapper
+{
+    margin: 0 0.6rem;
+}
+.nav-tools svg:hover,
+.sign-tool-wrapper h5:hover
+{
+    color: var(--primary-fade);
+}
+.search-tool-wrapper
+{
+    width: 80%;
+    background-color: var(--primary-mute);
+    padding: 0 0.5rem;
+    border-radius: 2px;
+    transition: all 0.4s;
+}
+.search-tool-wrapper:hover,
+.search-tool-wrapper:focus
+{
+    background-color: var(--primary-mute-fade);
+}
+.search-tool-wrapper input
+{
+    outline: 0;
+    width: 100%;
+    padding: 0.4rem 0.4rem 0.4rem 0;
+}
+.search-tool-wrapper input:focus + svg
+{
+    color: var(--primary-fade);
+}
+.cart-tool-wrapper,
+.wishlist-tool-wrapper
+{
+    position: relative;
+}
+.cart-tool-counter,
+.wishlist-tool-counter
+{
+    position: absolute;
+    right: 0px;
+    top: -8px;
+    height: 20px;
+    width: 20px;
+    background-color: var(--counter); 
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:650;
+    font-size: 0.75rem;
+    text-align: center;
+}
+.sign-tool-wrapper
+{
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: 0.5px;
+}
+
+/* --------------Lower Nav---------------------- */
+.lower-nav-wrapper
+{
+    background-color: var(--secondary-soft);
+    padding: 0.5rem 2rem;
+}
+.lower-nav-categories li a
+{
+    font-weight: 650;
+    font-size: 0.95rem;
+    color: var(--grey);
+    cursor: pointer;
+}
+.lower-nav-categories li a:hover
+{
+    color: var(--grey-soft);
+}
+.lower-nav-categories li
+{
+    position: relative;
+}
+.lower-nav-list-dropdown
+{
+    position: absolute;
+    top: 32px;
+    background-color: var(--white);
+    border: 1px solid var(--grey);
+    width: 50vw;
+    padding: 0.8rem 1rem;
+}
+.lower-nav-list-dropdown h1
+{
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--grey);
+}
